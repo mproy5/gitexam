@@ -18,4 +18,28 @@ public class Search
        System.our.println("not found");
 
     }
+
+    // Binary search
+    int first = arr1[0];
+    int last = arr1[arr1.length];
+    int mid = (first+last)/2;
+
+    int binkey = 9;
+
+    while(first <= last)
+    {
+        switch(key)
+        {
+            case (arr1[mid]<key):
+                first = mid + 1;
+                continue;
+            case (arr[mid] == key):
+                System.out.println("found");
+                break;
+            default:
+                last = mid - 1;
+                continue;
+        }
+    }
+    System.out.println("binary search not found");
 }
