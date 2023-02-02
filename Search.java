@@ -1,11 +1,19 @@
+import java.util.Scanner;
+
 public class Search
 {
     
     public static void main(String[] args)
     {
          int[] arr1 = {7, 9, 11, 12};
+
+        // Menu Driven part added
+        Scanner sc = new Scanner(System.in);
+         System.out.println("Type key to find");
+         int key = sc.nextInt();
+
          
-        int key = 11;
+        // int key = 11;
         // Linear Search
        for(int i = 0; i < arr.length; i++)
        {
@@ -24,7 +32,7 @@ public class Search
     int last = arr1[arr1.length];
     int mid = (first+last)/2;
 
-    int binkey = 9;
+    // int binkey = 9;
 
     while(first <= last)
     {
